@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Proyecto Appblue{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h3>Menú de Navegación</h3>
+        <nav>
+            <a href="/admin/panel">Panel Admin</a> | 
+            <a href="/blog/entrada/1">Blog</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
